@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_7sdp" android:layout_marginRight="@dimen/_10sdp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="@dimen/_44sdp" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@+id/card_main_view" android:visibility="visible" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_3sdp" app:cardCornerRadius="@dimen/_2sdp" app:cardElevation="0dp">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_folder" android:padding="@dimen/_1sdp" android:visibility="visible" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_folder" android:scaleType="centerCrop"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_image" android:visibility="gone" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_folder" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/iv_fav_image" android:visibility="gone" android:layout_width="@dimen/_11sdp" android:layout_height="@dimen/_11sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:src="@drawable/ic_fav_fill" android:layout_alignParentRight="true" app:tint="@color/theme_color"/>
+                    <androidx.cardview.widget.CardView android:id="@+id/card_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/_2sdp">
+                        <LinearLayout android:gravity="center" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp">
+                            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_9sdp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/txt_mime_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MP3" android:singleLine="true" android:textAllCaps="true"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <ImageView android:id="@+id/iv_fav_file" android:visibility="gone" android:layout_width="@dimen/_13sdp" android:layout_height="@dimen/_13sdp" android:layout_marginLeft="@dimen/_31sdp" android:src="@drawable/ic_star_file"/>
+            <ImageView android:id="@+id/iv_fav_other_file" android:visibility="gone" android:layout_width="@dimen/_13sdp" android:layout_height="@dimen/_13sdp" android:layout_marginLeft="@dimen/_28sdp" android:src="@drawable/ic_star_file"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_13sdp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textColor="@color/black" android:ellipsize="middle" android:id="@+id/txt_folder_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_7sdp" android:text="@string/filename" android:singleLine="true" android:layout_toLeftOf="@+id/ll_check" android:layout_alignParentLeft="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lout_bottom_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_7sdp" android:layout_toLeftOf="@+id/ll_check" android:layout_below="@+id/txt_folder_name" android:layout_alignParentLeft="true">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@color/txt_gray_dark" android:layout_gravity="center_vertical" android:id="@+id/txt_date_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/filename" android:singleLine="true" android:layout_weight="1"/>
+                <View android:layout_gravity="center_vertical" android:background="@color/gray_text" android:visibility="gone" android:layout_width="0.9dp" android:layout_height="@dimen/_10sdp" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@color/txt_gray_dark" android:layout_gravity="center_vertical" android:id="@+id/txt_folder_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 items" android:singleLine="true"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ll_check" android:visibility="visible" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_uncheck" android:layout_width="@dimen/_13sdp" android:layout_height="@dimen/_13sdp" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_radio_btn_unseleted"/>
+                <ImageView android:id="@+id/iv_check" android:visibility="gone" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_radio_btn_selected" app:tint="@color/theme_color"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_divider" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginLeft="@dimen/_51sdp" android:layout_marginTop="@dimen/_10sdp"/>
+</LinearLayout>

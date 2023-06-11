@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="beige_pallet">
+        <item>#ffb06660</item>
+        <item>#ffd9a88f</item>
+        <item>#ffeac3b8</item>
+        <item>#ffab9c73</item>
+        <item>#ffd2be96</item>
+        <item>#ffe3dcc0</item>
+        <item>#ff5e7703</item>
+        <item>#ff9baf8e</item>
+        <item>#ffc1cc89</item>
+        <item>#ffb4a851</item>
+        <item>#ffdfd27c</item>
+        <item>#ffe7e3b5</item>
+        <item>#ff405980</item>
+        <item>#ff6a7d8e</item>
+        <item>#ffaebbc7</item>
+        <item>#ffc1d2d6</item>
+        <item>#ff846d74</item>
+        <item>#ffb7a6ad</item>
+        <item>#ffd3c9ce</item>
+        <item>#ffd9b8a2</item>
+        <item>#ffbf8686</item>
+        <item>#ffb33050</item>
+    </array>
+    <array name="colorful_pallet">
+        <item>#ffff8c9d</item>
+        <item>#ffffd08c</item>
+        <item>#fffff78c</item>
+        <item>#ffc0ff8c</item>
+        <item>#ff8ceaff</item>
+        <item>#ffff00a0</item>
+        <item>#fffe9507</item>
+        <item>#fffbff00</item>
+        <item>#ff00ff61</item>
+        <item>#ff00a0ff</item>
+        <item>#ffc12552</item>
+        <item>#ffff6000</item>
+        <item>#fff5c700</item>
+        <item>#ff6a961f</item>
+        <item>#ff1d7fb9</item>
+        <item>#ffb36435</item>
+    </array>
+    <array name="google_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </array>
+    <array name="iamutkarshtiwari_github_io_ananas_filter_drawable_list">
+        <item>filter_1</item>
+        <item>filter_2</item>
+        <item>filter_3</item>
+        <item>filter_4</item>
+        <item>filter_5</item>
+        <item>filter_6</item>
+        <item>filter_7</item>
+        <item>filter_8</item>
+        <item>filter_9</item>
+        <item>filter_10</item>
+        <item>filter_11</item>
+        <item>filter_12</item>
+    </array>
+    <array name="iamutkarshtiwari_github_io_ananas_filters">
+        <item>Origin</item>
+        <item>Soft</item>
+        <item>Black</item>
+        <item>Classic</item>
+        <item>Gorgeous</item>
+        <item>Retro</item>
+        <item>Grace</item>
+        <item>Film</item>
+        <item>Memory</item>
+        <item>Yogurt</item>
+        <item>Fleeting</item>
+        <item>Shine</item>
+    </array>
+    <array name="iamutkarshtiwari_github_io_ananas_type_count">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="iamutkarshtiwari_github_io_ananas_type_names">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <item>Type 4</item>
+        <item>Type 5</item>
+        <item>Type 6</item>
+    </array>
+    <array name="iamutkarshtiwari_github_io_ananas_types">
+        <item>type1</item>
+        <item>type2</item>
+        <item>type3</item>
+        <item>type4</item>
+        <item>type5</item>
+        <item>type6</item>
+    </array>
+    <array name="material_pallet">
+        <item>#fff44336</item>
+        <item>#ffe91e63</item>
+        <item>#ff9c27b0</item>
+        <item>#ff673ab7</item>
+        <item>#ff3f51b5</item>
+        <item>#ff2196f3</item>
+        <item>#ff03a9f4</item>
+        <item>#ff00bcd4</item>
+        <item>#ff009688</item>
+        <item>#ff4caf50</item>
+        <item>#ff8bc34a</item>
+        <item>#ffcddc39</item>
+        <item>#ffffeb3b</item>
+        <item>#ffffc107</item>
+        <item>#ffff9800</item>
+        <item>#ffff5722</item>
+        <item>#ff795548</item>
+        <item>#ff9e9e9e</item>
+        <item>#ff607d8b</item>
+    </array>
+    <array name="material_pallet_dark">
+        <item>#ffb71c1c</item>
+        <item>#ff880e4f</item>
+        <item>#ff4a148c</item>
+        <item>#ff311b92</item>
+        <item>#ff1a237e</item>
+        <item>#ff0d47a1</item>
+        <item>#ff01579b</item>
+        <item>#ff006064</item>
+        <item>#ff004d40</item>
+        <item>#ff1b5e20</item>
+        <item>#ff33691e</item>
+        <item>#ff827717</item>
+        <item>#fff57f17</item>
+        <item>#ffff6f00</item>
+        <item>#ffe65100</item>
+        <item>#ffbf360c</item>
+        <item>#ff3e2723</item>
+        <item>#ff212121</item>
+        <item>#ff263238</item>
+    </array>
+    <array name="material_pallet_light">
+        <item>#ffef9a9a</item>
+        <item>#fff48fb1</item>
+        <item>#ffce93d8</item>
+        <item>#ffb39ddb</item>
+        <item>#ff9fa8da</item>
+        <item>#ff90caf9</item>
+        <item>#ff81d4fa</item>
+        <item>#ff80deea</item>
+        <item>#ff80cbc4</item>
+        <item>#ffa5d6a7</item>
+        <item>#ffc5e1a5</item>
+        <item>#ffe6ee9c</item>
+        <item>#fffff59d</item>
+        <item>#ffffe082</item>
+        <item>#ffffcc80</item>
+        <item>#ffffab91</item>
+        <item>#ffbcaaa4</item>
+        <item>#ffeeeeee</item>
+        <item>#ffb0bec5</item>
+    </array>
+</resources>

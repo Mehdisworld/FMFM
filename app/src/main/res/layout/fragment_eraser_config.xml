@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@color/black" android:padding="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+        android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/textEraseSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Size" android:layout_weight="0.85"/>
+    <SeekBar android:id="@+id/sbSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="25" android:progressDrawable="@drawable/seek_bar1" android:thumb="@drawable/seek_thumb1" android:layout_weight="0.15"/>
+</LinearLayout>

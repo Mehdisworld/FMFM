@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_above="@+id/btm1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.io.filemanager.freefileexplorer.easily.edit.imagezoom.ImageViewTouch
+            android:id="@+id/img_beauty_path"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/img_close" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_back" app:tint="@color/colorPrimary"/>
+                <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+                    android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_img_name" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/beauty" android:maxLines="1" android:layout_weight="1"/>
+                <ImageView android:id="@+id/img_save" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/done_select"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp">
+                    <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+                        android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Skin Tone" android:layout_weight="0.65"/>
+                    <SeekBar android:id="@+id/white_skin_value_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:max="10" android:progressDrawable="@drawable/seek_bar1" android:thumb="@drawable/seek_thumb1" android:layout_weight="0.23"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp">
+                    <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+                        android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/smoothness" android:layout_weight="0.65"/>
+                    <SeekBar android:id="@+id/smooth_value_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:max="500" android:progressDrawable="@drawable/seek_bar1" android:thumb="@drawable/seek_thumb1" android:layout_weight="0.23"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/custom_ad_banner"
+            layout="@layout/ads_banner_layout"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

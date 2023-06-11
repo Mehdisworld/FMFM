@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#606060</color>
+    <color name="colorPrimary">@color/theme_color</color>
+    <color name="colorPrimaryDark">#ff303f9f</color>
+
+    <color name="colorlight">#eaf4ff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackads">#1a1a1a</color>
+    <color name="black1">#4c4c4c</color>
+
+
+    <color name="colorbtn1">#ffb979</color>
+    <color name="colorbtn2">#7f90ff</color>
+    <color name="colorbtn3">#ff7b7c</color>
+    <color name="colorbtn4">#c67cff</color>
+    <color name="colorbtn5">#7abe20</color>
+    <color name="colorbtn6">#ff447f</color>
+    <color name="colorbtn7">#ff791b</color>
+    <color name="colorbtn8">#ff7ce8</color>
+    <color name="colorGrey">#808080</color>
+
+
+    <color name="_boosterend">#2397cc</color>
+    <color name="_boosterstart">#3195ff</color>
+    <color name="actionbar_grey">#55000000</color>
+    <color name="activated_item_foreground">#ff212121</color>
+    <color name="background">#ffffff</color>
+    <color name="blackbung">#1e1e1e</color>
+    <color name="blackk">#ff000000</color>
+    <color name="blue">#00810a</color>
+    <color name="boosterend_final">#4683fb</color>
+    <color name="boosterstar_final">#03a9f4</color>
+    <color name="card">#ff4b4c56</color>
+    <color name="card_color_grid">#f2f2f2</color>
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+
+    <color name="colorBlue">#1565c0</color>
+
+    <color name="colorPrimaryDarkMode">#1976d2</color>
+    <color name="color_00b6c5">#43a047</color>
+    <color name="color_accent">#00ba08</color>
+    <color name="colorblue1">#1f96ff</color>
+    <color name="colorblue_light">#7ad5fd</color>
+    <color name="colorred">#f44336</color>
+    <color name="colorred_light">#f6847c</color>
+    <color name="dark">#121212</color>
+    <color name="dialog_bg">#08b6b6b6</color>
+    <color name="divider">#55aaaaaa</color>
+    <color name="ggray">#808080</color>
+    <color name="gray">#81000000</color>
+    <color name="gray_divider">#e1e1e1</color>
+    <color name="gray_header">#8b8b8b</color>
+    <color name="gray_sub_text">#b6b6b6</color>
+    <color name="gray_text">#a4a4a4</color>
+    <color name="green">#00ff00</color>
+    <color name="home_text_color">#353535</color>
+    <color name="invisible_color">@color/gray_text</color>
+    <color name="kelly_1">#f2f3f4</color>
+    <color name="kelly_10">#5fa641</color>
+    <color name="kelly_11">#d485b2</color>
+    <color name="kelly_12">#4277b6</color>
+    <color name="kelly_13">#df8461</color>
+    <color name="kelly_14">#463397</color>
+    <color name="kelly_15">#e1a11a</color>
+    <color name="kelly_16">#91218c</color>
+    <color name="kelly_17">#e8e948</color>
+    <color name="kelly_18">#7e1510</color>
+    <color name="kelly_19">#92ae31</color>
+    <color name="kelly_2">#1d1d1d</color>
+    <color name="kelly_20">#6f340d</color>
+    <color name="kelly_21">#d32b1e</color>
+    <color name="kelly_22">#2b3514</color>
+    <color name="kelly_3">#ebce2b</color>
+    <color name="kelly_4">#702c8c</color>
+    <color name="kelly_5">#db6917</color>
+    <color name="kelly_6">#96cde6</color>
+    <color name="kelly_7">#ba1c30</color>
+    <color name="kelly_8">#c0bd7f</color>
+    <color name="kelly_9">#7f7e80</color>
+    <color name="lite_white_storage_header">#f7f9fc</color>
+    <color name="main_backgroud">#333333</color>
+    <color name="opacityblack">#ff242526</color>
+    <color name="piechartBackgroudColor">#ff64d3ae</color>
+    <color name="piechartColor">#ff57b0f7</color>
+    <color name="pressed_item_foreground">#fff5f5f5</color>
+    <color name="primary">#ff3f51b5</color>
+    <color name="primary_dark">#ff303f9f</color>
+    <color name="progress_color">#ffffffff</color>
+    <color name="radio_button_color">#ff9800</color>
+    <color name="rate_active_color">#fffeba39</color>
+    <color name="rate_background_color">#020b19</color>
+    <color name="rate_button_color">#006cbc</color>
+    <color name="rate_icon_color">#0d47a1</color>
+    <color name="rate_normal_color">#ffa5a5a5</color>
+    <color name="red">#ff0000</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="search_color">#f2f2f2</color>
+    <color name="search_hint_color">#7a7a7a</color>
+    <color name="search_hint_im_color">#404040</color>
+    <color name="search_hint_text_color">#252525</color>
+    <color name="test_color">#000</color>
+    <color name="text_color">#bec2c4</color>
+    <color name="text_color_gray_3">#a6a5a5</color>
+    <color name="theme_color">#daa639</color>
+    <color name="tint_circle_bg_done">@color/color_accent</color>
+    <color name="titleBackgroundColor">#ff00a6ff</color>
+    <color name="tmb_background">#ff222222</color>
+    <color name="toolbar_first">#ff132237</color>
+    <color name="tools_theme">#0074fe</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="trans_bg">#70000000</color>
+    <color name="trans_color">#70000000</color>
+    <color name="trans_color_2">#60000000</color>
+    <color name="trans_color_gray">#95dfdede</color>
+    <color name="trans_color_white">#50ffffff</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="txt_gray_dark">#727272</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_light_gray">#fff0f0f0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+    <color name="whiteTA">#ffffff</color>
+    <color name="whitebung">#f4f4f4</color>
+    <color name="yellow">#fddd3f</color>
+
+</resources>

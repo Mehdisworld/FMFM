@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_above="@+id/btm1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.io.filemanager.freefileexplorer.easily.edit.imagezoom.ImageViewTouch
+                android:id="@+id/img_set_sticker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:visibility="visible" />
+
+            <com.io.filemanager.freefileexplorer.easily.customViews.CustomPaintView
+                android:id="@+id/custom_paint_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/img_close" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_back" app:tint="@color/colorPrimary"/>
+                <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+                    android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_theme_name" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/paint" android:maxLines="1" android:layout_weight="1"/>
+                <ImageView android:id="@+id/img_save" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:layout_marginRight="@dimen/_4sdp" android:src="@drawable/done_select" app:tint="@color/colorPrimary"/>
+                <ImageView android:id="@+id/settings" android:src="@drawable/ic_settings_black_24dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:tint="@color/colorPrimary" style="@style/setting_icon_style"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_5sdp" android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:id="@+id/brush_btn"
+                    style="@style/option_style">
+
+                    <ImageView
+                        android:id="@+id/brush_icon"
+                        style="@style/icon_style"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_brush_white_24dp" />
+
+                    <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+                        android:id="@+id/txt_brush"
+                        style="@style/option_text_style"
+                        android:text="@string/brush" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/eraser_btn" style="@style/option_style">
+                    <ImageView android:layout_gravity="center" android:id="@+id/eraser_icon" android:src="@drawable/ic_eraser_disabled" style="@style/icon_style"/>
+                    <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+                        android:id="@+id/txt_eraser" android:text="@string/eraser" style="@style/option_text_style"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/custom_ad_banner"
+            layout="@layout/ads_banner_layout"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

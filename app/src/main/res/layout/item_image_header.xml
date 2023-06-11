@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_8sdp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="date" android:singleLine="true" android:layout_toLeftOf="@+id/ll_right" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/ll_right" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:paddingLeft="@dimen/_5sdp" android:paddingTop="@dimen/_3sdp" android:paddingBottom="@dimen/_3sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_8sdp" android:textColor="@color/black" android:gravity="center" android:id="@+id/txt_photo_counter" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/_14sdp" android:text="0" android:singleLine="true" android:layout_centerVertical="true"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_select" android:paddingLeft="@dimen/_5sdp" android:paddingTop="@dimen/_3sdp" android:paddingBottom="@dimen/_3sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_select_all" android:visibility="visible" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" app:srcCompat="@drawable/ic_radio_btn_unseleted"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

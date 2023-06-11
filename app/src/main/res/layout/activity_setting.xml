@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_above="@+id/btm1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_setting"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/theme_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/setting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.6dp"
+            android:background="@color/gray_divider"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/support"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+                <View android:background="@color/gray_divider" android:paddingLeft="@dimen/_15sdp" android:paddingRight="@dimen/_15sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                <RelativeLayout android:id="@+id/lout_privacy_policy" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_privacy" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_setting_privacy" android:layout_alignParentLeft="true" app:tint="@color/black"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/pp" android:layout_toRightOf="@+id/iv_privacy" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_divider" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.9dp" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+                <RelativeLayout android:id="@+id/lout_rate_us" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_rate_us" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_setting_rate_us" android:layout_alignParentLeft="true" app:tint="@color/black"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/rateus" android:layout_toRightOf="@+id/iv_rate_us" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_divider" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.9dp" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+                <RelativeLayout android:id="@+id/lout_share_us" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_share_us" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_setting_share_us" android:layout_alignParentLeft="true" app:tint="@color/black"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/shareus" android:layout_toRightOf="@+id/iv_share_us" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_divider" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.9dp" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+                <RelativeLayout android:id="@+id/lout_more_app" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_more_app" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_setting_more" android:layout_alignParentLeft="true" app:tint="@color/black"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/moreapp" android:layout_toRightOf="@+id/iv_more_app" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_divider" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.9dp" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+                <RelativeLayout android:id="@+id/lout_about_us" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_about_us" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:src="@drawable/ic_setting_about_us" android:layout_alignParentLeft="true" app:tint="@color/black"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/abtus" android:layout_toRightOf="@+id/iv_about_us" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_divider" android:paddingLeft="@dimen/_15sdp" android:paddingRight="@dimen/_15sdp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0.9dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp">
+                    <FrameLayout android:id="@+id/frame_layout_setting" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ry_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/tt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/custom_ad_banner"
+            layout="@layout/ads_banner_layout"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

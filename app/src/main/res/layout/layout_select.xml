@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lout_selected"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:padding="@dimen/_7sdp"
+        android:src="@drawable/ic_close_bottom"
+        android:tint="@color/theme_color" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toLeftOf="@+id/ll_favourite"
+        android:layout_toRightOf="@+id/iv_close"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/selected"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal" />
+
+    <RelativeLayout android:id="@+id/ll_favourite" android:padding="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:layout_toLeftOf="@+id/ll_check_all" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/iv_fav_unfill" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_fav_unfill" app:tint="@color/black"/>
+        <ImageView android:id="@+id/iv_fav_fill" android:visibility="gone" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_fav_fill" app:tint="@color/theme_color"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ll_check_all" android:padding="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/iv_uncheck" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_radio_btn_unseleted"/>
+        <ImageView android:id="@+id/iv_check_all" android:visibility="gone" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_radio_btn_selected" app:tint="@color/theme_color"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="@dimen/_3sdp" android:paddingRight="@dimen/_3sdp" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_3sdp" android:layout_above="@+id/lout_bottom" android:layout_alignParentTop="true" android:overScrollMode="never"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/lout_bottom">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:src="@drawable/ic_empty_folder"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_14sdp" android:textColor="@color/txt_gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty"/>
+    </LinearLayout>
+    <ProgressBar android:theme="@style/Progress_tint" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/lout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/layout_bottom_option"/>
+    </RelativeLayout>
+</RelativeLayout>

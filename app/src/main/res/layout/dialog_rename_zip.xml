@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_5sdp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/_10sdp" app:cardElevation="0dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:text="@string/renamefolderorrep"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_12sdp" android:textStyle="normal" android:textColor="@color/black" android:layout_gravity="left" android:id="@+id/txt_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_23sdp" android:layout_marginRight="@dimen/_15sdp" android:text="@string/youalradyhavfolder"/>
+        <View android:background="@color/gray_divider" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginTop="@dimen/_30sdp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/btn_skip" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textStyle="normal" android:textColor="@color/theme_color" android:gravity="center" android:paddingTop="@dimen/_11sdp" android:paddingBottom="@dimen/_11sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/skip"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_view" android:background="@color/gray_divider" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/theme_color" android:gravity="center" android:paddingTop="@dimen/_11sdp" android:paddingBottom="@dimen/_11sdp" android:layout_width="0.7dp" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/btn_replace" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textStyle="normal" android:textColor="@color/theme_color" android:gravity="center" android:paddingTop="@dimen/_11sdp" android:paddingBottom="@dimen/_11sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/replace"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/gray_divider" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/theme_color" android:gravity="center" android:paddingTop="@dimen/_11sdp" android:paddingBottom="@dimen/_11sdp" android:layout_width="0.7dp" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/btn_rename" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_13sdp" android:textStyle="normal" android:textColor="@color/theme_color" android:gravity="center" android:paddingTop="@dimen/_11sdp" android:paddingBottom="@dimen/_11sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rename"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

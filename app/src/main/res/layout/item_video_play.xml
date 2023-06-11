@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <VideoView android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/lout_bottom" android:background="@drawable/bg_transparent_gradient" android:paddingTop="@dimen/_25sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <SeekBar android:id="@+id/video_seek" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:maxHeight="@dimen/_20sdp" android:max="100" android:progress="50"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_20sdp" android:layout_marginBottom="@dimen/_8sdp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_9sdp" android:textColor="@color/white" android:id="@+id/txt_video_current_dur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:shadowColor="@color/black" android:shadowDx="-1" android:shadowDy="-1" android:shadowRadius="1" android:layout_alignParentLeft="true"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_9sdp" android:textColor="@color/white" android:id="@+id/txt_video_total_dur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:shadowColor="@color/black" android:shadowDx="-1" android:shadowDy="-1" android:shadowRadius="1" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_1sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10sdp">
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ic_lock" android:padding="@dimen/_7sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_loack" app:tint="@color/white"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/previous" android:padding="@dimen/_8sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/iv_next_button" android:rotation="180" app:tint="@color/white"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_weight="1">
+                <androidx.cardview.widget.CardView android:id="@+id/btn_play_pause" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="0dp" app:cardElevation="0dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_center_play_pause" android:padding="@dimen/_1sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/ic_play" app:tint="@color/white"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/next" android:padding="@dimen/_8sdp" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:src="@drawable/iv_next_button" app:tint="@color/white"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_rotate" android:padding="@dimen/_7sdp" android:visibility="gone" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_loack" app:tint="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

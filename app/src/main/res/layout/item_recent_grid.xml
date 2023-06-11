@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lout_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp" android:layout_centerHorizontal="true">
+        <androidx.cardview.widget.CardView android:id="@+id/card_main_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:cardBackgroundColor="@color/card_color_grid" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="0dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_folder_grid" android:visibility="visible" android:layout_width="@dimen/_23sdp" android:layout_height="@dimen/_23sdp" android:src="@drawable/ic_folder" android:layout_centerInParent="true"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_folder_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_folder" android:scaleType="centerCrop"/>
+                    <androidx.cardview.widget.CardView android:id="@+id/card_view_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/_3sdp">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@+id/card_view_grid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/_2sdp">
+                        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_9sdp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/txt_mime_type_grid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MP3" android:singleLine="true" android:textAllCaps="true"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_details" android:background="@color/trans_color_2" android:paddingLeft="@dimen/_5sdp" android:paddingTop="@dimen/_1sdp" android:paddingRight="@dimen/_5sdp" android:paddingBottom="@dimen/_1sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_9sdp" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="middle" android:gravity="center" android:id="@+id/txt_folder_name_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/filename" android:singleLine="true" android:layout_centerHorizontal="true"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="@dimen/_9sdp" android:textStyle="normal" android:textColor="@color/gray_text" android:gravity="start" android:id="@+id/txt_date_grid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="date" android:maxLines="2" android:singleLine="false" android:shadowColor="@color/black" android:shadowDx="3" android:shadowDy="3" android:shadowRadius="7" android:layout_centerHorizontal="true"/>
+                </LinearLayout>
+                <LinearLayout android:paddingLeft="@dimen/_5sdp" android:paddingRight="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_check_grid" android:visibility="gone" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" app:srcCompat="@drawable/ic_radio_btn_unseleted"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

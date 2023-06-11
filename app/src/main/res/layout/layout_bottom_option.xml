@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_option" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/gray_divider" android:layout_width="match_parent" android:layout_height="0.6dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_send" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_send" android:src="@drawable/ic_send_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:id="@+id/txt_text_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_compress" android:background="?attr/selectableItemBackground" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_compress" android:src="@drawable/ic_compress_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_compress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compress" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_extract" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_extract" android:padding="@dimen/_1sdp" android:src="@drawable/ic_extract_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_extract" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/extract" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_copy" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_copy" android:src="@drawable/ic_copy_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copy" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_move" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_move" android:src="@drawable/ic_move_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_move" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_delete" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_delete" android:src="@drawable/ic_delete_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lout_more" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="onClick" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_more" android:scaleType="centerInside" app:srcCompat="@drawable/ic_more_bottom" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" style="@style/bottom_option_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ll_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

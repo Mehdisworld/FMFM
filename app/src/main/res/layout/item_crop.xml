@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_ratio" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:layout_marginLeft="@dimen/_6sdp" android:layout_marginRight="@dimen/_6sdp" android:layout_marginBottom="@dimen/_2sdp" android:src="@drawable/ratio_3_4"/>
+    <com.io.filemanager.freefileexplorer.easily.customViews.CustomTextView
+        android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:id="@+id/txt_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

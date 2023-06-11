@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lout_dialog" android:background="@drawable/dialog_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_7sdp">
+    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_15sdp" android:text="@string/detail"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_15sdp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/titel"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/format"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_format" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": "/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lout_resolution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resolutiont"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": "/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filesize"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": "/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lout_duration" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/duration"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": "/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/path"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": "/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/black" android:id="@+id/txt_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/_15sdp"/>
+    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/theme_color" android:gravity="center" android:id="@+id/btn_ok" android:paddingTop="@dimen/_11sdp" android:paddingBottom="@dimen/_11sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ok"/>
+</LinearLayout>

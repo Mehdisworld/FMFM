@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_paste_option" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/gray_divider" android:layout_width="match_parent" android:layout_height="0.6dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lout_past" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_past" android:src="@drawable/ic_past_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_past" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/past" style="@style/bottom_option_text"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lout_past_cancel" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/bottom_option_layout">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_cancel" android:padding="@dimen/_2sdp" android:src="@drawable/ic_close_bottom" android:scaleType="centerInside" app:tint="@color/black" style="@style/bottom_option_icon"/>
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/txt_text_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/bottom_option_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
